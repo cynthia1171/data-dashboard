@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard Laboratoria</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- en esta seccion esta el logo y botones para ver la sede y la generacion-->
+    <header>
+        <div id="logo">
+            <img src="assets/image/logo-laboratoria.svg" alt="">
+        </div>
+        <nav>
+            <a href="#">DASHBOARD</a>
+            <a href="#">ESTUDIANTES</a>
+            <a href="#">PROFESORES</a>
+        </nav>
+        <div id="user">
+            <img src="assets/image/imagen.png" alt="">
+        </div>
+    </header>
+    <hr>
+
+    <!--inicio del main, contiene el contenido de la pagina, graficos, datos, etc-->
+    <main>
+        <div id="dashboard" class="container">
+            <h3>Dashboard</h3>
+            <ul class="nav nav-tabs">
+                <li class="active"><a href="#">Laboratoria</a></li>
+                <li class="dropdown" id="SCL">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Santiago
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li id="SCL20162"><a href="#">2016-II</a></li>
+                        <li id="SCL20171">
+                            <a href="#">2017-I</a>
+                        </li>
+                        <li id="SCL20172">
+                            <a href="#">2017-II</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown" id="AQP">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Arequipa
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">2016-II</a></li>
+                        <li><a href="#">2017-I</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown" id="CDMX">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Ciudad de México
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li id="CDMX20171"><a href="#">2017-I</a></li>
+                        <li id="CDMX20172"><a href="#">2017-II</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown" id="LIM">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Lima
+    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li id="LIM20162"><a href="#">2016-II</a></li>
+                        <li id="LIM20171">
+                            <a href="#">2017-I</a>
+                        </li>
+                        <li id="LIM20172">
+                            <a href="#">2017-II</a>
+                        </li>
+                    </ul>
+                </li>
+
+
+            </ul>
+            <div id="info">
+                <h4 id="subtitulo"></h4>
+                <h4 id="subSprint"></h4>
+                <div id="total" class="col-md-4">
+                    <div id="totalStud">
+                        <h4 id="total1"></h4>
+                        <p># total de estudiantes inscritas</p>
+                    </div>
+                    <div id="studDeser">
+                        <h4 id="porct1"></h4>
+                        <p>% total de alumnas desertoras</p>
+                    </div>
+                    <img src="assets/image/bar-graph.png" alt="">
+                </div>
+                <div id="metaSuperada" class="col-md-4">
+                    <div id="totalSup">
+                        <h4 id="total2"></h4>
+                        <p># de alumnas que superaron el promedio de los sprint</p>
+                    </div>
+                    <div id="totalSupPorc">
+                        <h4 id="porct2"></h4>
+                        <p>% que superaron el promedio de sprint</p>
+                    </div>
+                    <img src="assets/image/bar-graph.png" alt="">
+                </div>
+                <div id="promSprint" class="col-md-4">
+                    <ul class="nav nav-tabs">
+                        <li class="dropdown" id="">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Sprints
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li id="sprint1">
+                                    <a href="#">Sprint 1</a>
+                                </li>
+                                <li id="sprint2">
+                                    <a href="#">Sprint 2</a>
+                                </li>
+                                <li id="sprint3">
+                                    <a href="#">Sprint 3</a>
+                                </li>
+                                <li id="sprint4">
+                                    <a href="#">Sprint 4</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <img src="assets/image/graficoSUp70-01.png" alt="">
+                </div>
+                <div id="metaTec" class="col-md-6">
+                    <h4>Puntos Técnicos</h4>
+                    <img src="assets/image/graficoSUp70-01.png" alt="">
+                </div>
+                <div id="metaHSE" class="col-md-6">
+                    <h4>Puntos HSE</h4>
+                    <img src="assets/image/graficoSUp70-01.png" alt="">
+                </div>
+                <div id="satifLab" class="col-md-4">
+                    <h4>Alumnas satisfechas</h4>
+                    <img src="assets/image/sat.png" alt="">
+                </div>
+                <div id="promProfes" class="col-md-4">
+                    <h4>Promedio Profesores</h4>
+                    <img src="assets/image/fpro-01.png" alt="">
+                </div>
+                <div id="promJedi" class="col-md-4">
+                    <h4>Promedio Jedi Master</h4>
+                    <img src="assets/image/jedi-01.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="students">
+
+        </div>
+        <div id="teachers">
+
+        </div>
+    </main>
+    <!-- Base de datos -->
+    <script src="./js/data.js "></script>
+    <!-- Aquí va tus archivos JS -->
+    <script src="./js/app.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
